@@ -4,12 +4,21 @@ import java.sql.Date;
 
 public class Reiziger {
 
+	private int reizigerID;
 	private String naam;
 	private Date gbdatum;
 	
 	public Reiziger() {
 		
 	}
+	
+	public int getReizigerID() {
+		return reizigerID;
+	}
+	
+	public void setReizigerID(int reizigerID) {
+		this.reizigerID = reizigerID;
+}
 	
 	public String getNaam() {
 		return naam;
