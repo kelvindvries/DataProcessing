@@ -1,23 +1,23 @@
 package ovChipkaart;
 
-import java.sql.Date;
-
 public class Reiziger {
 
 	private int reizigerID;
 	private String naam;
-	private Date gbdatum;
+	private String gbdatum;
 	
-	public Reiziger() {
-		
+	public Reiziger(int reizigerID,String nm, String GBdatum) {
+		this.reizigerID = reizigerID;
+		naam = nm;
+		gbdatum = GBdatum;
 	}
 	
 	public int getReizigerID() {
 		return reizigerID;
 	}
 	
-	public void setReizigerID(int reizigerID) {
-		this.reizigerID = reizigerID;
+	public void setReizigerID(int reID) {
+		this.reizigerID = reID;
 }
 	
 	public String getNaam() {
@@ -28,11 +28,16 @@ public class Reiziger {
 		naam = nm;
 	}
 	
-	public Date getGBdatum() {
+	public String getGBdatum() {
 		return gbdatum;
 	}
 	
-	public void setGBdatum(Date gbd) {
+	public void setGBdatum(String gbd) {
 		gbdatum = gbd;
+	}
+	
+	public String toString() {
+		String s = reizigerID  + " " + naam + " " + gbdatum;
+		return s;
 	}
 }

@@ -1,17 +1,17 @@
 package ovChipkaart;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public abstract class ReizigerOracleDaolmpl implements ReizigerDao{
+public class ReizigerOracleDaolmpl implements ReizigerDao{
 	
 	private ArrayList<Reiziger> alleReizigers = new ArrayList<Reiziger>();
-	
-	public ArrayList<Reiziger> findAll(){
+	public ArrayList<Reiziger> findAll() {
 		return alleReizigers;
 	}
 	
-	public ArrayList<Reiziger> findByGBdatum(String GBdatum){		
-        ArrayList<Reiziger> gevondenReizigers = new ArrayList<Reiziger>();
+	public List<Reiziger> findByGBdatum(String GBdatum){		
+        List<Reiziger> gevondenReizigers = new ArrayList<Reiziger>();
         for (Reiziger r : alleReizigers) {
         	if (r.getGBdatum().equals(GBdatum)) {
         		gevondenReizigers.add(r);

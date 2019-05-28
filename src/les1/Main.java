@@ -5,7 +5,7 @@ import java.sql.*;
 public class Main {
 	
 	private static final String DB_DRIV = "oracle.jdbc.driver.OracleDriver";
-	private static final String DB_URL = "jdbc:oracle:thin:@//localhost:1521/xepdb1";
+	private static final String DB_URL  = "jdbc:oracle:thin:@//localhost:1521/xepdb1";
 	private static final String DB_USER = "KELVIN";
 	private static final String DB_PASS = "0000";
 	private static Connection conn;
